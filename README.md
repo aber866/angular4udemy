@@ -23,3 +23,7 @@ ng-disabled="" ahora es [disabled]="!allowNewServer"
 directivas con * es que cambian el dom
 
 *ngFor="let server of servers" // creo que ngrepeat
+
+recipes: Recipe[] = []; //hemos declarado un array del model REcipe
+
+<img src="{{ recipe.imagePath }}" [src]="recipe.imagePath" //es lo mismo
