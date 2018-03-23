@@ -14,6 +14,14 @@ selector: '[app-servers]', //si ponemos corchetes es que es un atributo y no un 
 							//dentro de @componentn en el js
 selector: ".app-servers", // selector by class
 
+[ngStyle]="{
+	'padding-top': module.dimCorrelation
+}"
+[ngClass]="[
+	module.dimCorrelation ? module.dimCorrelation : '', //Tendrá de clase el valor de module.dimCorrelation si existe
+        module.dimCorrelation ? 'insetImage' : ''
+]"
+
 ng-disabled="" ahora es [disabled]="!allowNewServer"
 [] //Property binding () //event binding --> (click)=""
 *ngIf="" //ng if
